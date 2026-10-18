@@ -4,7 +4,11 @@
 ==========================================================
 Since Mysql doest not differenciate databases and schemas. Remember that we will have 3 schemas instead of One database and 3 schemas.
 This script supposes the creation of databases after verifying if they exist because it is very important.
-NB: Creating these databases will delete anyone if they already exist in your environment.
+NB: Creating these databases will delete the previous one with their data if they already exist in your environment.
+
+But if you use MS Server you can use a code like:
+CREATE DATABASE IF NOT EXISTS datawarehouse;
+
 */
 
 CREATE DATABASE IF NOT EXISTS BRONZE;
